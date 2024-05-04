@@ -111,6 +111,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Biblioteca.h" />
+    <ClInclude Include="Bibliotecario.h" />
+    <ClInclude Include="ConstanciaDePrestamo.h" />
+    <ClInclude Include="DatosPrestamo.h" />
+    <ClInclude Include="DetalleEntrega.h" />
+    <ClInclude Include="Devolucion.h" />
+    <ClInclude Include="IngresoDatos.h" />
+    <ClInclude Include="Libro.h" />
+    <ClInclude Include="Mantenimiento.h" />
+    <ClInclude Include="Microcontrolador.h" />
+    <ClInclude Include="Multa.h" />
+    <ClInclude Include="Notificacion.h" />
+    <ClInclude Include="Registro.h" />
+    <ClInclude Include="Repositorio.h" />
+    <ClInclude Include="Robot.h" />
+    <ClInclude Include="SeguimientoPrestamo.h" />
+    <ClInclude Include="SolicitudMantenimiento.h" />
+    <ClInclude Include="SolicitudPrestamo.h" />
+    <ClInclude Include="Usuario.h" />
+    <ClInclude Include="ValidacionSolicitud.h" />
+    <ClInclude Include="ValoracionEntrega.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Biblioteca.cpp" />
+    <ClCompile Include="ConstanciaDePrestamo.cpp" />
+    <ClCompile Include="DatosPrestamo.cpp" />
+    <ClCompile Include="DetalleEntrega.cpp" />
+    <ClCompile Include="Devolucion.cpp" />
+    <ClCompile Include="IngresoDatos.cpp" />
+    <ClCompile Include="Libro.cpp" />
+    <ClCompile Include="Mantenimiento.cpp" />
+    <ClCompile Include="Microcontrolador.cpp" />
+    <ClCompile Include="Multa.cpp" />
+    <ClCompile Include="Notificacion.cpp" />
+    <ClCompile Include="Registro.cpp" />
+    <ClCompile Include="Repositorio.cpp" />
+    <ClCompile Include="Robot.cpp" />
+    <ClCompile Include="SeguimientoPrestamo.cpp" />
+    <ClCompile Include="SolicitudMantenimiento.cpp" />
+    <ClCompile Include="SolicitudPrestamo.cpp" />
+    <ClCompile Include="Bibliotecario.cpp" />
+    <ClCompile Include="Usuario.cpp" />
+    <ClCompile Include="ValidacionSolicitud.cpp" />
+    <ClCompile Include="ValoracionEntrega.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
