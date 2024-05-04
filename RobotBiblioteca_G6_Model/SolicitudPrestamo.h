@@ -7,26 +7,38 @@
 using namespace System;
 using namespace System::Collections::Generic;
 
+
 namespace RobotBiblioteca_G6_Model {
 
 	public ref class SolicitudPrestamo : DatosPrestamo {
-
 	private:
-
+		Libro^ objLibro;
 		int idSolicitudP;
 		int numeroSolicitud;
 		int diasPrestamo;
 		ValidacionSolicitud^ objValidacionSolicitud;
 		List<DetalleEntrega^>^ listaDetalle;
-		Libro^ objLibro;
-
+		
 	public:
-
 		SolicitudPrestamo();
 		SolicitudPrestamo(int idSolicitudP, int cantLibros, double pesoLibros, int idDatosP, int numeroSolicitud, int diasPrestamo, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega, ValidacionSolicitud^ objValidacionSolicitud, Libro^ objLibro, List<DetalleEntrega^>^ listaDetalle);
-		//SolicitudPrestamo(int idSolicitudP, int cantLibros, int idDatosP, double pesoLibros, int numeroSolicitud, int diasPrestamo, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega, ValidacionSolicitud^ objValidacionSolicitud, Libro^ objLibro, List<DetalleEntrega^>^ listaDetalle);
 
 		// GET - SET
+		int getIdSolicitudP();
+		void setIdSolicitudP(int idSolicitudP);
+
+		ValidacionSolicitud^ getObjValidacionSolicitud();
+		void setObjValidacionSolicitud(ValidacionSolicitud^ objValidacionSolicitud);
+
+		Libro^ getObjLibro();
+		void setObjLibro(Libro^ objLibro);
+
+		int getNumeroSolicitud();
+		void setNumeroSolicitud(int numeroSolicitud);
+
+		int getDiasPrestamo();
+		void setDiasPrestamo(int diasPrestamo);
+				   
 
 		/*
 
@@ -54,22 +66,6 @@ namespace RobotBiblioteca_G6_Model {
 
 		String^ getHoraEntrega();
 		void setHoraEntrega(String^ horaEntrega);*/
-
-		int getIdSolicitudP();
-		void setIdSolicitudP(int idSolicitudP);
-
-		ValidacionSolicitud^ getObjValidacionSolicitud();
-		void setObjValidacionSolicitud(ValidacionSolicitud^ objValidacionSolicitud);
-
-		Libro^ getObjLibro();
-		void setObjLibro(Libro^ objLibro);
-
-		int getNumeroSolicitud();
-		void setNumeroSolicitud(int numeroSolicitud);
-
-		int getDiasPrestamo();
-		void setDiasPrestamo(int diasPrestamo);
-
 
 	};
 

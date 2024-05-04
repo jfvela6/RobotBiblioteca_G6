@@ -78,6 +78,9 @@ void SolicitudPrestamo::setHoraEntrega(String^ horaEntrega) {
 }
 */
 
+
+
+
 int SolicitudPrestamo::getIdSolicitudP() {
 	return this->idSolicitudP;
 }

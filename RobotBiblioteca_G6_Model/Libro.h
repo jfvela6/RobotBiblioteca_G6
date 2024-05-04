@@ -33,37 +33,26 @@ namespace RobotBiblioteca_G6_Model {
 
 		int getIdLibro();
 		void setIdLibro(int idLibro);
-
 		String^ getTitulo();
 		void setTitulo(String^ titulo);
-
 		String^ getcategoria();
 		void setcategoria(String^ categoria);
-
 		String^ getEstado();
 		void setEstado(String^ estado);
-
 		int getEdicion();
 		void setEdicion(int edicion);
-
 		String^ getReseña();
 		void setReseña(String^ reseña);
-
 		String^ getEtiqueta();
 		void setEtiqueta(String^ etiqueta);
-
 		String^ getAutorlibro();
 		void setAutorlibro(String^ autorlibro);
-
 		String^ getDisponibilidad();
 		void setDisponibilidad(String^ disponibilidad);
-
 		Biblioteca^ getObjBiblioteca();
 		void setObjBiblioteca(Biblioteca^ objBiblioteca);
-
 		SolicitudPrestamo^ getObjSolicitudPrestamo();
 		void setObjSolicitudPrestamo(SolicitudPrestamo^ objSolicitudPrestamo);
-
 	};
 
 }
