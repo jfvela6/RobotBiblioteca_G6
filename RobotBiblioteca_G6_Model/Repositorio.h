@@ -20,7 +20,7 @@ namespace RobotBiblioteca_G6_Model {
 	public:
 		Repositorio();
 		Repositorio(int idRepositorio, String^ estante, String^ piso, String^ categoria, String^ autores, String^ etiqueta, Biblioteca^ objBiblioteca);
-
+		/*
 		int getIdRepositorio();
 		void setIdRepositorio(int idRepositorio);
 
@@ -40,7 +40,7 @@ namespace RobotBiblioteca_G6_Model {
 		void setEtiqueta(String^ etiqueta);
 
 		Biblioteca^ getObjBiblioteca();
-		void setObjBiblioteca(Biblioteca^ objBiblioteca);
+		void setObjBiblioteca(Biblioteca^ objBiblioteca);*/
 
 	};
 
