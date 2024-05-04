@@ -23,13 +23,12 @@ namespace RobotBiblioteca_G6_Model {
 		String^ autorlibro;
 		String^ disponibilidad;
 		Biblioteca^ objBiblioteca;
-		SolicitudPrestamo^ objSolicitudPrestamo;
 		List<Mantenimiento^>^ listaMantenimiento;
 
 
 	public:
 		Libro();
-		Libro(int idLibro, String^ titulo, String^ categoria, String^ estado, int edicion, String^ reseña, String^ etiqueta, String^ autorlibro, String^ disponibilidad, Biblioteca^ objBiblioteca, SolicitudPrestamo^ objSolicitudPrestamo, List<Mantenimiento^>^ listaMantenimiento);
+		Libro(int idLibro, String^ titulo, String^ categoria, String^ estado, int edicion, String^ reseña, String^ etiqueta, String^ autorlibro, String^ disponibilidad, Biblioteca^ objBiblioteca,  List<Mantenimiento^>^ listaMantenimiento);
 
 		int getIdLibro();
 		void setIdLibro(int idLibro);
@@ -51,8 +50,7 @@ namespace RobotBiblioteca_G6_Model {
 		void setDisponibilidad(String^ disponibilidad);
 		Biblioteca^ getObjBiblioteca();
 		void setObjBiblioteca(Biblioteca^ objBiblioteca);
-		SolicitudPrestamo^ getObjSolicitudPrestamo();
-		void setObjSolicitudPrestamo(SolicitudPrestamo^ objSolicitudPrestamo);
+
 	};
 
 }

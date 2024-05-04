@@ -5,6 +5,10 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RobotBiblioteca_G6_Model", "RobotBiblioteca_G6_Model\RobotBiblioteca_G6_Model.vcxproj", "{A59A5E32-9E94-4CD0-9EBA-0060F62AD172}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RobotBiblioteca_G6_Controler", "RobotBiblioteca_G6_Controler\RobotBiblioteca_G6_Controler.vcxproj", "{B55A4665-C880-4F8C-8161-C01768F18FA4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RobotBiblioteca_G6_View", "RobotBiblioteca_G6_View\RobotBiblioteca_G6_View.vcxproj", "{65F07BE3-64E1-40D8-AED7-DCB2239F326A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +25,22 @@ Global
 		{A59A5E32-9E94-4CD0-9EBA-0060F62AD172}.Release|x64.Build.0 = Release|x64
 		{A59A5E32-9E94-4CD0-9EBA-0060F62AD172}.Release|x86.ActiveCfg = Release|Win32
 		{A59A5E32-9E94-4CD0-9EBA-0060F62AD172}.Release|x86.Build.0 = Release|Win32
+		{B55A4665-C880-4F8C-8161-C01768F18FA4}.Debug|x64.ActiveCfg = Debug|x64
+		{B55A4665-C880-4F8C-8161-C01768F18FA4}.Debug|x64.Build.0 = Debug|x64
+		{B55A4665-C880-4F8C-8161-C01768F18FA4}.Debug|x86.ActiveCfg = Debug|Win32
+		{B55A4665-C880-4F8C-8161-C01768F18FA4}.Debug|x86.Build.0 = Debug|Win32
+		{B55A4665-C880-4F8C-8161-C01768F18FA4}.Release|x64.ActiveCfg = Release|x64
+		{B55A4665-C880-4F8C-8161-C01768F18FA4}.Release|x64.Build.0 = Release|x64
+		{B55A4665-C880-4F8C-8161-C01768F18FA4}.Release|x86.ActiveCfg = Release|Win32
+		{B55A4665-C880-4F8C-8161-C01768F18FA4}.Release|x86.Build.0 = Release|Win32
+		{65F07BE3-64E1-40D8-AED7-DCB2239F326A}.Debug|x64.ActiveCfg = Debug|x64
+		{65F07BE3-64E1-40D8-AED7-DCB2239F326A}.Debug|x64.Build.0 = Debug|x64
+		{65F07BE3-64E1-40D8-AED7-DCB2239F326A}.Debug|x86.ActiveCfg = Debug|Win32
+		{65F07BE3-64E1-40D8-AED7-DCB2239F326A}.Debug|x86.Build.0 = Debug|Win32
+		{65F07BE3-64E1-40D8-AED7-DCB2239F326A}.Release|x64.ActiveCfg = Release|x64
+		{65F07BE3-64E1-40D8-AED7-DCB2239F326A}.Release|x64.Build.0 = Release|x64
+		{65F07BE3-64E1-40D8-AED7-DCB2239F326A}.Release|x86.ActiveCfg = Release|Win32
+		{65F07BE3-64E1-40D8-AED7-DCB2239F326A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

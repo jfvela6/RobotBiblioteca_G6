@@ -20,10 +20,10 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{A59A5E32-9E94-4CD0-9EBA-0060F62AD172}</ProjectGuid>
+    <ProjectGuid>{65F07BE3-64E1-40D8-AED7-DCB2239F326A}</ProjectGuid>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>RobotBibliotecaG6Model</RootNamespace>
+    <RootNamespace>RobotBibliotecaG6View</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -42,7 +42,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CLRSupport>true</CLRSupport>
@@ -81,6 +81,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -111,50 +113,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Biblioteca.h" />
-    <ClInclude Include="Bibliotecario.h" />
-    <ClInclude Include="ConstanciaDePrestamo.h" />
-    <ClInclude Include="DatosPrestamo.h" />
-    <ClInclude Include="DetalleEntrega.h" />
-    <ClInclude Include="Devolucion.h" />
-    <ClInclude Include="IngresoDatos.h" />
-    <ClInclude Include="Libro.h" />
-    <ClInclude Include="Mantenimiento.h" />
-    <ClInclude Include="Microcontrolador.h" />
-    <ClInclude Include="Multa.h" />
-    <ClInclude Include="Notificacion.h" />
-    <ClInclude Include="Registro.h" />
-    <ClInclude Include="Repositorio.h" />
-    <ClInclude Include="Robot.h" />
-    <ClInclude Include="SeguimientoPrestamo.h" />
-    <ClInclude Include="SolicitudMantenimiento.h" />
-    <ClInclude Include="SolicitudPrestamo.h" />
-    <ClInclude Include="Usuario.h" />
-    <ClInclude Include="ValidacionSolicitud.h" />
-    <ClInclude Include="ValoracionEntrega.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Biblioteca.cpp" />
-    <ClCompile Include="ConstanciaDePrestamo.cpp" />
-    <ClCompile Include="DatosPrestamo.cpp" />
-    <ClCompile Include="DetalleEntrega.cpp" />
-    <ClCompile Include="Devolucion.cpp" />
-    <ClCompile Include="IngresoDatos.cpp" />
-    <ClCompile Include="Libro.cpp" />
-    <ClCompile Include="Mantenimiento.cpp" />
-    <ClCompile Include="Microcontrolador.cpp" />
-    <ClCompile Include="Multa.cpp" />
-    <ClCompile Include="Notificacion.cpp" />
-    <ClCompile Include="Registro.cpp" />
-    <ClCompile Include="Repositorio.cpp" />
-    <ClCompile Include="Robot.cpp" />
-    <ClCompile Include="SeguimientoPrestamo.cpp" />
-    <ClCompile Include="SolicitudMantenimiento.cpp" />
-    <ClCompile Include="SolicitudPrestamo.cpp" />
-    <ClCompile Include="Bibliotecario.cpp" />
-    <ClCompile Include="Usuario.cpp" />
-    <ClCompile Include="ValidacionSolicitud.cpp" />
-    <ClCompile Include="ValoracionEntrega.cpp" />
+    <ProjectReference Include="..\RobotBiblioteca_G6_Controler\RobotBiblioteca_G6_Controler.vcxproj">
+      <Project>{b55a4665-c880-4f8c-8161-c01768f18fa4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RobotBiblioteca_G6_Model\RobotBiblioteca_G6_Model.vcxproj">
+      <Project>{a59a5e32-9e94-4cd0-9eba-0060f62ad172}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,7 +6,7 @@ Libro::Libro() {
 
 }
 
-Libro::Libro(int idLibro, String^ titulo, String^ categoria, String^ estado, int edicion, String^ reseña, String^ etiqueta, String^ autorlibro, String^ disponibilidad, Biblioteca^ objBiblioteca, SolicitudPrestamo^ objSolicitudPrestamo, List<Mantenimiento^>^ listaMantenimiento) {
+Libro::Libro(int idLibro, String^ titulo, String^ categoria, String^ estado, int edicion, String^ reseña, String^ etiqueta, String^ autorlibro, String^ disponibilidad, Biblioteca^ objBiblioteca, List<Mantenimiento^>^ listaMantenimiento) {
 	this->idLibro = idLibro;
 	this->titulo = titulo;
 	this->categoria = categoria;
@@ -17,7 +17,7 @@ Libro::Libro(int idLibro, String^ titulo, String^ categoria, String^ estado, int
 	this->autorlibro = autorlibro;
 	this->disponibilidad = disponibilidad;
 	this->objBiblioteca = objBiblioteca;
-	this->objSolicitudPrestamo = objSolicitudPrestamo;
+
 }
 
 int Libro::getIdLibro() {
@@ -94,9 +94,3 @@ void Libro::setObjBiblioteca(Biblioteca^ objBiblioteca) {
 	this->objBiblioteca = objBiblioteca;
 }
 
-SolicitudPrestamo^ Libro::getObjSolicitudPrestamo() {
-	return this->objSolicitudPrestamo;
-}
-void Libro::setObjSolicitudPrestamo(SolicitudPrestamo^ objSolicitudPrestamo) {
-	this->objSolicitudPrestamo = objSolicitudPrestamo;
-}
