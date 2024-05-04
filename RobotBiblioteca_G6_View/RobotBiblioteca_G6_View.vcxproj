@@ -113,9 +113,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RobotBiblioteca_G6_Controler\RobotBiblioteca_G6_Controler.vcxproj">
-      <Project>{b55a4665-c880-4f8c-8161-c01768f18fa4}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\RobotBiblioteca_G6_Model\RobotBiblioteca_G6_Model.vcxproj">
       <Project>{a59a5e32-9e94-4cd0-9eba-0060f62ad172}</Project>
     </ProjectReference>
