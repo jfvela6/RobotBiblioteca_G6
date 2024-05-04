@@ -7,12 +7,11 @@ SolicitudPrestamo::SolicitudPrestamo() : DatosPrestamo() {
 }
 
 
-SolicitudPrestamo::SolicitudPrestamo(int idSolicitudP, int cantLibros, double pesoLibros, int idDatosP, int numeroSolicitud, int diasPrestamo, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega, ValidacionSolicitud^ objValidacionSolicitud, Libro^ objLibro, List<DetalleEntrega^>^ listaDetalle) : DatosPrestamo(idDatosP, cantLibros, pesoLibros, fechaDevolucion, horaDevolucion, fechaEntrega, horaEntrega) {
+SolicitudPrestamo::SolicitudPrestamo(int idSolicitudP, int cantLibros, double pesoLibros, int idDatosP, int numeroSolicitud, int diasPrestamo, String^ fechaDevolucion, String^ horaDevolucion, String^ fechaEntrega, String^ horaEntrega, ValidacionSolicitud^ objValidacionSolicitud, List<DetalleEntrega^>^ listaDetalle) : DatosPrestamo(idDatosP, cantLibros, pesoLibros, fechaDevolucion, horaDevolucion, fechaEntrega, horaEntrega) {
 	this->idSolicitudP = idSolicitudP;
 	this->numeroSolicitud = numeroSolicitud;
 	this->diasPrestamo = diasPrestamo;
 	this->objValidacionSolicitud = objValidacionSolicitud;
-	this->objLibro = objLibro;
 	this->listaDetalle = listaDetalle;
 }
 
@@ -95,14 +94,6 @@ ValidacionSolicitud^ SolicitudPrestamo::getObjValidacionSolicitud() {
 
 void SolicitudPrestamo::setObjValidacionSolicitud(ValidacionSolicitud^ objValidacionSolicitud) {
 	this->objValidacionSolicitud = objValidacionSolicitud;
-}
-
-Libro^ SolicitudPrestamo::getObjLibro() {
-	return this->objLibro;
-}
-
-void SolicitudPrestamo::setObjLibro(Libro^ objLibro) {
-	this->objLibro = objLibro;
 }
 
 
