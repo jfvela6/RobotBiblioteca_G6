@@ -116,9 +116,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="RegistroController.h" />
     <ClInclude Include="RobotController.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="RegistroController.cpp" />
     <ClCompile Include="RobotController.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

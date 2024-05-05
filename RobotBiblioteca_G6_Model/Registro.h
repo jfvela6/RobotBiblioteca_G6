@@ -15,7 +15,7 @@ namespace RobotBiblioteca_G6_Model {
 
 	public:
 		Registro();
-		Registro(int idRegistro, String^ direccion, String^ DNI, String^ contraseña, String^ fecha, int codigo, String^ correo, String^ cuenta, String^ telefono,int idIngreso);
+		Registro(int codigo, String^ direccion, String^ telefono, String^ cuenta, String^ DNI, String^ correo, String^ contraseña, String^ fecha, int idRegistro, int idIngreso);
 
 		int getIdRegistro();
 		void setIdRegistro(int idRegistro);

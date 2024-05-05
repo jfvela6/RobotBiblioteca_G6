@@ -1,7 +1,7 @@
 #pragma once
 #include "frmMantRobot.h"
 
-namespace RobotBibliotecaG6View {
+namespace RobotBiblioteca_G6_View {
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -64,27 +64,30 @@ namespace RobotBibliotecaG6View {
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->robotToolStripMenuItem });
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(687, 28);
+			this->menuStrip1->Padding = System::Windows::Forms::Padding(4, 2, 0, 2);
+			this->menuStrip1->Size = System::Drawing::Size(552, 24);
 			this->menuStrip1->TabIndex = 1;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
 			// robotToolStripMenuItem
 			// 
 			this->robotToolStripMenuItem->Name = L"robotToolStripMenuItem";
-			this->robotToolStripMenuItem->Size = System::Drawing::Size(64, 24);
+			this->robotToolStripMenuItem->Size = System::Drawing::Size(51, 20);
 			this->robotToolStripMenuItem->Text = L"Robot";
 			this->robotToolStripMenuItem->Click += gcnew System::EventHandler(this, &frmPrincipal::robotToolStripMenuItem_Click);
 			// 
 			// frmPrincipal
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(687, 404);
+			this->ClientSize = System::Drawing::Size(552, 396);
 			this->Controls->Add(this->menuStrip1);
 			this->IsMdiContainer = true;
 			this->MainMenuStrip = this->menuStrip1;
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"frmPrincipal";
 			this->Text = L"frmPrincipal";
+			this->Load += gcnew System::EventHandler(this, &frmPrincipal::frmPrincipal_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
@@ -96,6 +99,8 @@ namespace RobotBibliotecaG6View {
 		frmMantRobot^ ventanaMantRobot = gcnew frmMantRobot();
 		ventanaMantRobot->MdiParent = this;
 		ventanaMantRobot->Show();
+	}
+	private: System::Void frmPrincipal_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }

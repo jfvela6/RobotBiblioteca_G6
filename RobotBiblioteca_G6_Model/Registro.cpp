@@ -6,7 +6,7 @@ Registro::Registro(): IngresoDatos() {
 
 }
 
-Registro::Registro(int idRegistro, String^ direccion, String^ DNI, String^ contraseña, String^ fecha, int codigo, String^ correo, String^ cuenta, String^ telefono,int idIngreso) : IngresoDatos(idIngreso,codigo, correo, cuenta, telefono) {
+Registro::Registro(int codigo, String^ direccion, String^ telefono, String^ cuenta, String^ DNI, String^ correo, String^ contraseña, String^ fecha, int idRegistro, int idIngreso) : IngresoDatos(idIngreso,codigo, correo, cuenta, telefono) {
 
 	this->idRegistro = idRegistro;
 	this->direccion = direccion;

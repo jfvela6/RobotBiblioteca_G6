@@ -1,9 +1,11 @@
 #pragma once
 
-using namespace System;
-using namespace System::Collections::Generic;
-using namespace RobotBiblioteca_G6_Model;
+
 namespace RobotBiblioteca_G6_Controller {
+	using namespace System;
+	using namespace System::Collections::Generic;
+	using namespace RobotBiblioteca_G6_Model;
+
 	public ref class RobotController {
 		public:
 			RobotController();

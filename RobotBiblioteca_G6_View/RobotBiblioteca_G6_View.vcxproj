@@ -130,7 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="frmEditarRobot.cpp" />
+    <ClCompile Include="frmMantRegistro.cpp" />
     <ClCompile Include="frmMantRobot.cpp" />
+    <ClCompile Include="frmNuevoRegistro.cpp" />
     <ClCompile Include="frmNuevoRobot.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
     <ClCompile Include="main.cpp" />
@@ -139,7 +141,13 @@
     <ClInclude Include="frmEditarRobot.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frmMantRegistro.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmMantRobot.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoRegistro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmNuevoRobot.h">
@@ -153,8 +161,14 @@
     <EmbeddedResource Include="frmEditarRobot.resx">
       <DependentUpon>frmEditarRobot.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMantRegistro.resx">
+      <DependentUpon>frmMantRegistro.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMantRobot.resx">
       <DependentUpon>frmMantRobot.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoRegistro.resx">
+      <DependentUpon>frmNuevoRegistro.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoRobot.resx">
       <DependentUpon>frmNuevoRobot.h</DependentUpon>
