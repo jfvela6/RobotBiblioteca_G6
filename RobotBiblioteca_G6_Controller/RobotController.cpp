@@ -7,6 +7,7 @@ RobotController::RobotController() {
 
 }
 List<Robot^>^ RobotController::buscarRobotxCapacidadCarga(String^ robotCapacidadCarga) {
+	List<Robot^>^ listaRobots = gcnew List<Robot^>();
 	array<String^>^ lineas = File::ReadAllLines("ReposDatumRobots.txt");
 	String^ separadores = ";";//se define el char q separa de un string a otro
 	for each (String^ lineaRobot in lineas) {
@@ -20,6 +21,8 @@ List<Robot^>^ RobotController::buscarRobotxCapacidadCarga(String^ robotCapacidad
 		Microcontrolador^ objMicrocontrolador;
 		if (String::Compare(robotCapacidadCarga, capacidadCarga) > 0) {
 			Robot^ objRobot = gcnew Robot(idRobot, velocidad, bateria, capacidadCarga, dimensiones, objMicrocontrolador);
+			listaRobots->Add(objRobot);
 		}
 	}
+	return listaRobots;
 }

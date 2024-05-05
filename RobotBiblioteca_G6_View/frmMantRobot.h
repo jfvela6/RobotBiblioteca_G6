@@ -11,6 +11,7 @@ namespace RobotBibliotecaG6View {
 	using namespace System::Drawing;
 	using namespace System::Collections::Generic;
 	using namespace RobotBiblioteca_G6_Model;
+	using namespace RobotBiblioteca_G6_Controller;
 
 	/// <summary>
 	/// Resumen de frmMantRobot
@@ -279,7 +280,7 @@ namespace RobotBibliotecaG6View {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ capacidadCarga = this->comboBox1->Text;
 		RobotController^ objRobotController = gcnew RobotController();
-		List<Robot^>^ listaRobots = objRobotController->buscarRobotxCapacidadCarga(robotCapacidadCarga)
+		List<Robot^>^ listaRobots = objRobotController->buscarRobotxCapacidadCarga(robotCapacidadCarga);
 	}
 private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 }
