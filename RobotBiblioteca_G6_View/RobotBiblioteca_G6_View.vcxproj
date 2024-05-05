@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -113,9 +113,55 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RobotBiblioteca_G6_Controller\RobotBiblioteca_G6_Controller.vcxproj">
+      <Project>{3d3c45cf-d693-49e0-99ee-781069254733}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\RobotBiblioteca_G6_Model\RobotBiblioteca_G6_Model.vcxproj">
       <Project>{a59a5e32-9e94-4cd0-9eba-0060f62ad172}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="frmEditarRobot.cpp" />
+    <ClCompile Include="frmMantRobot.cpp" />
+    <ClCompile Include="frmNuevoRobot.cpp" />
+    <ClCompile Include="frmPrincipal.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frmEditarRobot.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantRobot.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoRobot.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEditarRobot.resx">
+      <DependentUpon>frmEditarRobot.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantRobot.resx">
+      <DependentUpon>frmMantRobot.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoRobot.resx">
+      <DependentUpon>frmNuevoRobot.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
