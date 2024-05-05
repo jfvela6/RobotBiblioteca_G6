@@ -10,9 +10,7 @@ using namespace RobotBibliotecaG6View;
 
 
 
-void main(array <String^>^ args)
-
-{
+void main(array <String^>^ args){
 
 	Application::EnableVisualStyles();
 

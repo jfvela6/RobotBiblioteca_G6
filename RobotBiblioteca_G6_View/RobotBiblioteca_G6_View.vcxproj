@@ -142,13 +142,13 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMantRegistro.h">
-      <FileType>CppForm</FileType>
+      <FileType>CppHeader</FileType>
     </ClInclude>
     <ClInclude Include="frmMantRobot.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmNuevoRegistro.h">
-      <FileType>CppForm</FileType>
+      <FileType>CppHeader</FileType>
     </ClInclude>
     <ClInclude Include="frmNuevoRobot.h">
       <FileType>CppForm</FileType>
