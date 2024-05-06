@@ -36,10 +36,10 @@ String^ Microcontrolador::getFabricante() {
 void  Microcontrolador::setFabricante(String^ fabricante) {
 	this->fabricante = fabricante;
 }
-String^ Microcontrolador::getnombre() {
+String^ Microcontrolador::getNombre() {
 	return this->nombre;
 }
-void  Microcontrolador::setnombre(String^ nombre) {
+void  Microcontrolador::setNombre(String^ nombre) {
 	this->nombre = nombre;
 }
 String^ Microcontrolador::getDatasheet() {

@@ -7,7 +7,7 @@ using namespace System;
 Robot::Robot() {
 
 }
-Robot::Robot(int idRobot, double velocidad, int bateria, double capacidadCarga, double dimensiones, Microcontrolador^ objMicrocontrolador) {
+Robot::Robot(int idRobot, double velocidad, int bateria, String^ capacidadCarga, String^ dimensiones, Microcontrolador^ objMicrocontrolador) {
 	this->idRobot = idRobot;
 	this->velocidad = velocidad;
 	this->bateria = bateria;
@@ -33,16 +33,16 @@ int Robot::getBateria() {
 void Robot::setBateria(int bateria) {
 	this->bateria = bateria;
 }
-double Robot::getCapacidadCarga() {
+String^ Robot::getCapacidadCarga() {
 	return this->capacidadCarga;
 }
-void Robot::setCapacidadCarga(double capacidadCarga) {
+void Robot::setCapacidadCarga(String^ capacidadCarga) {
 	this->capacidadCarga = capacidadCarga;
 }
-double Robot::getDimensiones() {
+String^ Robot::getDimensiones() {
 	return this->dimensiones;
 }
-void Robot::setDimensiones(double dimensiones) {
+void Robot::setDimensiones(String^ dimensiones) {
 	this->dimensiones = dimensiones;
 }
 Microcontrolador^ Robot::getObjMicrocontrolador() {
