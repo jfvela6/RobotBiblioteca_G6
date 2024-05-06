@@ -139,6 +139,7 @@
     <ClCompile Include="frmNuevoRegistro.cpp" />
     <ClCompile Include="frmNuevoRobot.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmEditarRobot.h">
