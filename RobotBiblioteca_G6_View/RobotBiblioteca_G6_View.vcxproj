@@ -130,21 +130,36 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="frmEditarRobot.cpp" />
+    <ClCompile Include="frmMantenimientoBiblioteca.cpp" />
+    <ClCompile Include="frmMantenimientoLibro.cpp" />
     <ClCompile Include="frmMantRegistro.cpp" />
     <ClCompile Include="frmMantRobot.cpp" />
+    <ClCompile Include="frmNuevoBiblioteca.cpp" />
+    <ClCompile Include="frmNuevoLibro.cpp" />
     <ClCompile Include="frmNuevoRegistro.cpp" />
     <ClCompile Include="frmNuevoRobot.cpp" />
     <ClCompile Include="frmPrincipal.cpp" />
-    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="frmEditarRobot.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantenimientoBiblioteca.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantenimientoLibro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmMantRegistro.h">
       <FileType>CppHeader</FileType>
     </ClInclude>
     <ClInclude Include="frmMantRobot.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoBiblioteca.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoLibro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="frmNuevoRegistro.h">
@@ -161,11 +176,23 @@
     <EmbeddedResource Include="frmEditarRobot.resx">
       <DependentUpon>frmEditarRobot.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoBiblioteca.resx">
+      <DependentUpon>frmMantenimientoBiblioteca.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoLibro.resx">
+      <DependentUpon>frmMantenimientoLibro.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMantRegistro.resx">
       <DependentUpon>frmMantRegistro.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantRobot.resx">
       <DependentUpon>frmMantRobot.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoBiblioteca.resx">
+      <DependentUpon>frmNuevoBiblioteca.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoLibro.resx">
+      <DependentUpon>frmNuevoLibro.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNuevoRegistro.resx">
       <DependentUpon>frmNuevoRegistro.h</DependentUpon>
