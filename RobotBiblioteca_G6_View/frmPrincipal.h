@@ -1,6 +1,5 @@
 #pragma once
 #include "frmMantRobot.h"
-
 namespace RobotBiblioteca_G6_View {
 
 	using namespace System;

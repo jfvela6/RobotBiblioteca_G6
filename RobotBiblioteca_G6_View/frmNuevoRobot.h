@@ -8,6 +8,7 @@ namespace RobotBibliotecaG6View {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace RobotBiblioteca_G6_Controller;
 
 	/// <summary>
 	/// Resumen de frmNuevoRobot
@@ -257,6 +258,16 @@ namespace RobotBibliotecaG6View {
 private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	int idRobot = Convert::ToInt32(this->textBox1->Text);
+	int capacidadCarga = Convert::ToInt32(this->comboBox1->Text);
+	int bateria = Convert::ToInt32(this->textBox2->Text);
+	double velocidad = Convert::ToDouble(this->textBox3->Text);
+	String^ microcontrolador = this->comboBox2->Text;
+	String^ dimensiones = this->comboBox3->Text;
+	RobotController^ objRobotController = gcnew RobotController();
+	objRobotController->agregarNuevoRobot(idRobot, velocidad, bateria, capacidadCarga, dimensiones, objMicrocontrolador)
+	MessageBox::Show("El peluche ha sido agregado con éxito");
+	this->Close();
 }
 };
 }

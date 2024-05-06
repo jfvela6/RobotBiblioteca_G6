@@ -9,6 +9,9 @@ namespace RobotBiblioteca_G6_Controller {
 	public ref class RobotController {
 		public:
 			RobotController();
-			List<Robot^>^ buscarRobotxCapacidadCarga(String^ capacidadCarga);
+			List<Robot^>^ buscarRobotxCapacidadCarga(String^ robotCapacidadCarga);
+			List<Robot^>^ buscarRobotAll();
+			void agregarNuevoRobot(int idRobot, double velocidad, int bateria, String^ capacidadCarga, String^ dimensiones, Microcontrolador^ objMicrocontrolador);
+			void escribirArchivo(List<Robot^>^ listaRobots);
 	};
 }
