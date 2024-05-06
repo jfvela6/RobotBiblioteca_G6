@@ -1,6 +1,5 @@
 #pragma once
 #include "frmMantRobot.h"
-
 namespace RobotBiblioteca_G6_View {
 
 	using namespace System;
@@ -9,6 +8,8 @@ namespace RobotBiblioteca_G6_View {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace RobotBiblioteca_G6_Model;
+	using namespace RobotBiblioteca_G6_Controller;
 
 	/// <summary>
 	/// Resumen de frmPrincipal

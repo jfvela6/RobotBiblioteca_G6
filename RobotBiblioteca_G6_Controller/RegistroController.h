@@ -15,7 +15,4 @@ namespace RobotBiblioteca_G6_Controller {
 		void escribirArchivo(List<Registro^>^ listaRegistros);
 	};
 	
-
-
-
 }

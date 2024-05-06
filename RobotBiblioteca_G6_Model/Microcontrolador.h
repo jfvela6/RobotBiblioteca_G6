@@ -22,8 +22,8 @@ namespace RobotBiblioteca_G6_Model {
 		void setCantPines(int cantPines);
 		String^ getFabricante();
 		void setFabricante(String^ fabricante);
-		String^ getnombre();
-		void setnombre(String^ nombre);
+		String^ getNombre();
+		void setNombre(String^ nombre);
 		String^ getDatasheet();
 		void setDatasheet(String^ datasheet);
 	};

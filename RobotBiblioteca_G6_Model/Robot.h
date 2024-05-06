@@ -9,20 +9,20 @@ namespace RobotBiblioteca_G6_Model {
 		int idRobot;
 		double velocidad;
 		int bateria;
-		double capacidadCarga;
+		String^ capacidadCarga;
 		String^ dimensiones;
 		Microcontrolador^ objMicrocontrolador;
 	public:
 		Robot();
-		Robot(int idRobot, double velocidad, int bateria, double capacidadCarga, String^ dimensiones, Microcontrolador^ objMicrocontrolador);
+		Robot(int idRobot, double velocidad, int bateria, String^ capacidadCarga, String^ dimensiones, Microcontrolador^ objMicrocontrolador);
 		int getidRobot();
 		void setidRobot(int idRobot);
 		double getVelocidad();
 		void setVelocidad(double velocidad);
 		int getBateria();
 		void setBateria(int bateria);
-		double getCapacidadCarga();
-		void setCapacidadCarga(double capacidadCarga);
+		String^ getCapacidadCarga();
+		void setCapacidadCarga(String^ capacidadCarga);
 		String^ getDimensiones();
 		void setDimensiones(String^ dimensiones);
 		Microcontrolador^ getObjMicrocontrolador();

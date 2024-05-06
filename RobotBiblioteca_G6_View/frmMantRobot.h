@@ -9,6 +9,9 @@ namespace RobotBibliotecaG6View {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Collections::Generic;
+	using namespace RobotBiblioteca_G6_Model;
+	using namespace RobotBiblioteca_G6_Controller;
 
 	/// <summary>
 	/// Resumen de frmMantRobot
@@ -54,8 +57,8 @@ namespace RobotBibliotecaG6View {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column4;
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column5;
-	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::TextBox^ textBox1;
+
+
 
 
 
@@ -83,8 +86,6 @@ namespace RobotBibliotecaG6View {
 		void InitializeComponent(void)
 		{
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -104,8 +105,6 @@ namespace RobotBibliotecaG6View {
 			// 
 			// groupBox1
 			// 
-			this->groupBox1->Controls->Add(this->textBox1);
-			this->groupBox1->Controls->Add(this->label2);
 			this->groupBox1->Controls->Add(this->button1);
 			this->groupBox1->Controls->Add(this->comboBox1);
 			this->groupBox1->Controls->Add(this->label1);
@@ -116,24 +115,6 @@ namespace RobotBibliotecaG6View {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Criterios de Búsqueda";
 			this->groupBox1->Enter += gcnew System::EventHandler(this, &frmMantRobot::groupBox1_Enter);
-			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(271, 85);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(189, 22);
-			this->textBox1->TabIndex = 5;
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &frmMantRobot::textBox1_TextChanged);
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(178, 88);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(58, 16);
-			this->label2->TabIndex = 4;
-			this->label2->Text = L"idRobot:";
-			this->label2->Click += gcnew System::EventHandler(this, &frmMantRobot::label2_Click_1);
 			// 
 			// button1
 			// 
@@ -149,7 +130,7 @@ namespace RobotBibliotecaG6View {
 			// 
 			this->comboBox1->FormattingEnabled = true;
 			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"20", L"50", L"100", L"200" });
-			this->comboBox1->Location = System::Drawing::Point(271, 45);
+			this->comboBox1->Location = System::Drawing::Point(302, 63);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(189, 24);
 			this->comboBox1->TabIndex = 2;
@@ -158,7 +139,7 @@ namespace RobotBibliotecaG6View {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(100, 45);
+			this->label1->Location = System::Drawing::Point(91, 66);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(163, 16);
 			this->label1->TabIndex = 1;
@@ -172,7 +153,7 @@ namespace RobotBibliotecaG6View {
 				this->Column1,
 					this->Column2, this->Column6, this->Column3, this->Column4, this->Column5
 			});
-			this->dataGridView1->Location = System::Drawing::Point(25, 154);
+			this->dataGridView1->Location = System::Drawing::Point(25, 138);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 51;
 			this->dataGridView1->RowTemplate->Height = 24;
@@ -276,7 +257,25 @@ namespace RobotBibliotecaG6View {
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ capacidadCarga = this->comboBox1->Text;
+		RobotController^ objRobotController = gcnew RobotController();
+		List<Robot^>^ listaRobots = objRobotController->buscarRobotxCapacidadCarga(capacidadCarga);
+		mostrarGrilla(listaRobots);
 	}
+		private: void mostrarGrilla(List<Robot^>^ listaRobots) {
+			this->dataGridView1->Rows->Clear();
+			for (int i = 0; i < listaRobots->Count; i++) {
+				Robot^ objRobot = listaRobots[i];
+				array<String^>^ filaGrilla = gcnew array<String^>(6);
+				filaGrilla[0] = Convert::ToString(objRobot->getidRobot());
+				filaGrilla[1] = Convert::ToString(objRobot->getVelocidad());
+				filaGrilla[2] = Convert::ToString(objRobot->getBateria());
+				filaGrilla[3] = Convert::ToString(objRobot->getCapacidadCarga());
+				filaGrilla[4] = objRobot->getDimensiones();
+				filaGrilla[5] = objRobot->getObjMicrocontrolador();
+				this->dataGridView1->Rows->Add(filaGrilla);
+
+			}
+		}
 private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -292,6 +291,8 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void frmMantRobot_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
